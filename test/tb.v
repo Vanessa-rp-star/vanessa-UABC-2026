@@ -23,7 +23,7 @@ module tb;
     $dumpvars(0, tb);
   end
 
-  tt_um_vanessa_rocha DUT (
+  tt_um_vanessa_rocha user_project (
 
 `ifdef GL_TEST
     .VPWR(VPWR),
