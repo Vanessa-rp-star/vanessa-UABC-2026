@@ -1,42 +1,50 @@
+yaml_version: 6
+
 project:
-  title: "ALU básica de 4 bits"
+  title: "4-bit ALU"
   author: "Vanessa Rocha Perez"
-  description: "Una ALU simple que realiza operaciones aritméticas y lógicas entre dos operandos de 4 bits."
+  description: "A simple 4-bit ALU capable of arithmetic and logic operations."
   language: "Verilog"
-  clock_hz: 1000000
+  clock_hz: 0
 
-  inputs:
-    - ui_in[0]
-    - ui_in[1]
-    - ui_in[2]
-    - ui_in[3]
-    - ui_in[4]
-    - ui_in[5]
-    - ui_in[6]
-    - ui_in[7]
+  top_module: "project"
 
-  outputs:
-    - uo_out[0]
-    - uo_out[1]
-    - uo_out[2]
-    - uo_out[3]
-    - uo_out[4]
-    - uo_out[5]
-    - uo_out[6]
-    - uo_out[7]
+  source_files:
+    - "project.v"
 
-  bidirectional:
-    - uio_in[0]
-    - uio_in[1]
-    - uio_in[2]
-    - uio_in[3]
-    - uio_in[4]
-    - uio_in[5]
-    - uio_in[6]
-    - uio_in[7]
+pinout:
+  ui[0]: "A0"
+  ui[1]: "A1"
+  ui[2]: "A2"
+  ui[3]: "A3"
+  ui[4]: "B0"
+  ui[5]: "B1"
+  ui[6]: "B2"
+  ui[7]: "B3"
 
-  pins:
-    ui_in[3:0]: "Operando A"
-    ui_in[7:4]: "Operando B"
-    uio_in[2:0]: "Selector de operación"
-    uo_out[7:0]: "Resultado de la ALU"
+  uo[0]: "Result0"
+  uo[1]: "Result1"
+  uo[2]: "Result2"
+  uo[3]: "Result3"
+  uo[4]: "Result4"
+  uo[5]: "Result5"
+  uo[6]: "Result6"
+  uo[7]: "Result7"
+
+  uio[0]: "OP0"
+  uio[1]: "OP1"
+  uio[2]: "OP2"
+  uio[3]: ""
+  uio[4]: ""
+  uio[5]: ""
+  uio[6]: ""
+  uio[7]: ""
+
+  ua[0]: ""
+  ua[1]: ""
+  ua[2]: ""
+  ua[3]: ""
+  ua[4]: ""
+  ua[5]: ""
+  ua[6]: ""
+  ua[7]: ""
