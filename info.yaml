@@ -9,10 +9,10 @@ project:
 
   tiles: "1x1"
 
-  top_module: "tt_um_project"
+top_module: "tt_um_vanessa_rocha"
 
-  source_files:
-    - "project.v"
+source_files:
+  - "tt_um_vanessa_rocha.v"
 
 pinout:
   ui[0]: "A0"
