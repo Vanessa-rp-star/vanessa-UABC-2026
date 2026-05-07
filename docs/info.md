@@ -1,49 +1,37 @@
-<!---
-
-This file is used to generate your project datasheet. Please fill in the information below and delete any unused
-sections.
-
-You can also include images in this folder and reference them in the markdown. Each image must be less than
-512 kb in size, and the combined size of all images must be less than 1 MB.
--->
 # 4-bit ALU
 
 ## Description
-This project implements a simple ALU that performs arithmetic and logical operations between two 4-bit operands.
+This project implements a simple 4-bit Arithmetic Logic Unit (ALU) capable of performing arithmetic and logical operations between two 4-bit operands.
 
 ## How it works
-
-The system takes two operands:
+The ALU receives two 4-bit inputs:
 - A = ui_in[3:0]
 - B = ui_in[7:4]
 
-And an operation defined by:
+The operation is selected using:
 - op = uio_in[2:0]
 
-Available operations:
-- 000 → A + B
-- 001 → A - B
-- 010 → A AND B
-- 011 → A OR B
-- 100 → A XOR B
-- 101 → A < B
+Supported operations:
+- 000 → Addition (A + B)
+- 001 → Subtraction (A - B)
+- 010 → Bitwise AND
+- 011 → Bitwise OR
+- 100 → Bitwise XOR
+- 101 → Less-than comparison (A < B)
 
-The result is output on:
+The result is displayed on:
 - uo_out[7:0]
 
-
 ## How to test
-
-1. Assign values to A and B using `ui_in`
-2. Select the operation using `uio_in[2:0]`
-3. Observe the result on `uo_out`
+1. Set operand A using `ui_in[3:0]`
+2. Set operand B using `ui_in[7:4]`
+3. Select the operation using `uio_in[2:0]`
+4. Observe the output on `uo_out[7:0]`
 
 Example:
-- A = 20
-- B = 30
-- op = 000 (addition)
+- A = 5
+- B = 3
+- op = 000
 
-
-## External hardware
-
-- uo_out = 50
+Expected result:
+- uo_out = 8
