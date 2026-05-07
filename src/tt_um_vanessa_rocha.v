@@ -19,10 +19,10 @@ module tt_um_vanessa_rocha (
     wire [3:0] B = ui_in[7:4];
     wire [2:0] op = uio_in[2:0];
 
-    reg [7:0] result = 8'b0;
+    reg [7:0] result; 
 
     always @(*) begin
-        result = 8'b0;
+        result = 8'b0; 
 
         case (op)
             3'b000: result = {4'b0, A} + {4'b0, B}; // ADD
