@@ -28,7 +28,7 @@ module tb ();
 `endif
 
   
- tt_um_vanessa_rocha user_project (
+tt_um_vanessa_rocha user_project ( 
 
       // Include power ports for the Gate Level test:
 `ifdef GL_TEST
