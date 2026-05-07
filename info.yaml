@@ -12,7 +12,7 @@ project:
   source_files:
     - "project.v"
 
-pinout:
+  pinout:
   ui[0]: "A0"
   ui[1]: "A1"
   ui[2]: "A2"
@@ -48,3 +48,5 @@ pinout:
   ua[5]: ""
   ua[6]: ""
   ua[7]: ""
+  
+
