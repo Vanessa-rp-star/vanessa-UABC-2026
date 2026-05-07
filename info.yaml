@@ -7,12 +7,14 @@ project:
   language: "Verilog"
   clock_hz: 0
 
-  top_module: "project"
+  tiles: "1x1"
+
+  top_module: "tt_um_project"
 
   source_files:
     - "project.v"
 
-  pinout:
+pinout:
   ui[0]: "A0"
   ui[1]: "A1"
   ui[2]: "A2"
@@ -26,10 +28,10 @@ project:
   uo[1]: "Result1"
   uo[2]: "Result2"
   uo[3]: "Result3"
-  uo[4]: "Result4"
-  uo[5]: "Result5"
-  uo[6]: "Result6"
-  uo[7]: "Result7"
+  uo[4]: "Carry"
+  uo[5]: ""
+  uo[6]: ""
+  uo[7]: ""
 
   uio[0]: "OP0"
   uio[1]: "OP1"
@@ -39,14 +41,5 @@ project:
   uio[5]: ""
   uio[6]: ""
   uio[7]: ""
-
-  ua[0]: ""
-  ua[1]: ""
-  ua[2]: ""
-  ua[3]: ""
-  ua[4]: ""
-  ua[5]: ""
-  ua[6]: ""
-  ua[7]: ""
   
 
