@@ -1,3 +1,4 @@
+yaml_version: 4
 project:
   title: "4-bit ALU"
   author: "Vanessa Rocha Perez"
